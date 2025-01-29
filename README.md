@@ -18,4 +18,4 @@ Este projeto é uma página de login responsiva criada utilizando **HTML, CSS e 
 ![Smartphone]()
 ![Tablet]()
 ![Laptop]()
-![Monitor]()
+![Desktop]()
