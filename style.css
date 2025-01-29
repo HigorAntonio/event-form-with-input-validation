@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d9d9d9;
+  position: relative;
+  padding: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+
+body::after {
+  content: "";
+  background: #121214;
+  width: 100%;
+  height: 368px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  max-width: 736px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+header h1 {
+  max-width: 319px;
+  font-family: Archivo, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+}
+
+header p {
+  max-width: 283px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #42d3ff;
+}
+
+form {
+  width: 100%;
+  max-width: 736px;
+  border-radius: 8px;
+  background: #fafafc;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 64px;
+  border: none;
+}
+
+form fieldset:nth-of-type(1),
+form fieldset:nth-of-type(2) {
+  margin-bottom: 48px;
+}
+
+form fieldset:nth-of-type(2),
+form fieldset:nth-of-type(3) {
+  margin-top: 0;
+}
+
+form legend {
+  font-family: Archivo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  color: #32264d;
+  margin-bottom: 16px;
+}
+
+form hr {
+  border: none;
+  height: 1px;
+  background: #e6e6f0;
+}
+
+form label {
+  color: #4e4958;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+form label span {
+  color: #c1bccc;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 12px;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.horizontal-container {
+  display: flex;
+  gap: 16px;
+}
+
+form input,
+form textarea,
+form select,
+form select option {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+  height: 56px;
+}
+
+form input[type="checkbox"] {
+  appearance: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox-container {
+  position: relative;
+}
+
+.checkbox-container::after {
+  content: "";
+  display: none;
+  width: 24px;
+  height: 24px;
+  background: url("./assets/check.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.show-after::after {
+  display: flex;
+}
+
+form input::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #c1bccc;
+}
+
+form textarea {
+  height: 168px;
+  resize: none;
+}
+
+form select,
+form select option {
+  padding: 16px 24px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #c1bccc;
+}
+
+form select {
+  appearance: none;
+  flex: 1;
+}
+
+form select:hover,
+option:hover {
+  cursor: pointer;
+}
+
+.select-container {
+  display: flex;
+  position: relative;
+}
+
+.select-container::after {
+  content: "";
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background: url("./assets/arrowDown.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translate(-100%, -50%);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  pointer-events: none;
+}
+
+.buttons {
+  width: 100%;
+  padding: 40px 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f4;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #d6d6d6;
+}
+
+.buttons button[type="submit"] {
+  flex: 1;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  background: #04d361;
+
+  font-family: Archivo, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+  color: #fff;
+}
+
+.buttons button[type="submit"]:hover {
+  cursor: pointer;
+  background: color-mix(in srgb, #04d361 90%, #000 10%);
+}
+
+.event-date-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-date {
+  flex: 1;
+  max-width: 312px;
+}
+
+.event-begining-hour {
+  flex: 1;
+  max-width: 128px;
+}
+
+.event-end-hour {
+  flex: 1;
+  max-width: 128px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 80px 64px;
+  }
+
+  form fieldset {
+    margin: 32px;
+  }
+
+  form fieldset:nth-of-type(1),
+  form fieldset:nth-of-type(2) {
+    margin-bottom: 48px;
+  }
+
+  form fieldset:nth-of-type(2),
+  form fieldset:nth-of-type(3) {
+    margin-top: 0;
+  }
+
+  .buttons {
+    padding: 40px 32px;
+  }
+}
+
+.invalidText {
+  color: #d30404;
+}
+
+.invalidInput {
+  border-color: #d30404;
+}
+
+@media only screen and (max-width: 490px) {
+  body {
+    padding: 80px 32px;
+  }
+
+  form fieldset {
+    margin: 16px;
+  }
+
+  form fieldset:nth-of-type(1),
+  form fieldset:nth-of-type(2) {
+    margin-bottom: 48px;
+  }
+
+  form fieldset:nth-of-type(2),
+  form fieldset:nth-of-type(3) {
+    margin-top: 0;
+  }
+
+  .buttons {
+    padding: 40px 16px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    padding: 80px 16px;
+  }
+}
