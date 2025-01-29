@@ -3,7 +3,7 @@
 ![Preview](assets/captures/captura-de-tela.png)
 
 ## 📌 Sobre o Projeto
-Este projeto é uma página de login responsiva criada utilizando **HTML, CSS e JavaScript**.
+Este projeto é uma página de cadasto de eventos, com validação de inputs, responsiva criada utilizando **HTML, CSS e JavaScript**.
 
 ## 🌐 Acesse o Projeto
 🔗 [Clique aqui para visualizar a página online](https://higorantonio.github.io/event-form-with-input-validation/)
