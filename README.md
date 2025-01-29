@@ -1,6 +1,6 @@
 # Formulário de eventos com validação de inputs
 
-![Preview]()
+![Preview](assets/captures/captura-de-tela.png)
 
 ## 📌 Sobre o Projeto
 Este projeto é uma página de login responsiva criada utilizando **HTML, CSS e JavaScript**.
@@ -15,7 +15,7 @@ Este projeto é uma página de login responsiva criada utilizando **HTML, CSS e 
 
 ## 📸 Capturas de Tela
 
-![Smartphone]()
-![Tablet]()
-![Laptop]()
-![Desktop]()
+![Smartphone](assets/captures/event-form-with-input-validation-smartphone.png)
+![Tablet](assets/captures/event-form-with-input-validation-tablet.png)
+![Laptop](assets/captures/event-form-with-input-validation-laptop.png)
+![Desktop](assets/captures/event-form-with-input-validation-desktop.png)
